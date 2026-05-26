@@ -12,9 +12,9 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 143
 ### Paso 2: Conectarte con SQL Server Management Studio (SSMS)
 1. Abre `SQL Server Management Studio`.
 2. En la ventana de conexión, ingresa los siguientes datos:
-  * Authentication: `SQL Server Authentication`.
-  * Login: `sa`.
-  * Password: La contraseña que definiste en el comando de Docker (ej. `TuPasswordFuerte123!`).
+    - Authentication: `SQL Server Authentication`.
+    - Login: `sa`.
+    - Password: La contraseña que definiste en el comando de Docker (ej. `TuPasswordFuerte123!`).
 3. Haz clic en `Connect`.
 
 ### Paso 3: Crear la base de datos
