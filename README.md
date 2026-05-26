@@ -3,13 +3,13 @@
 Crear una base de datos en `SQL Server` usando `Docker` y gestionarla con `SQL Server Management Studio (SSMS)` es un proceso rápido: levantas el contenedor, te conectas a él desde SSMS y creas la base de datos gráficamente o mediante código.
 
 ## Pasos
-### Paso 1: Iniciar el contenedor de `SQL Server` en `Docker`
+### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
 Abre tu terminal (`PowerShell`, `CMD` o `Bash`) y ejecuta el siguiente comando para descargar e iniciar la última versión de `SQL Server`. Asegúrate de cambiar `TuPasswordFuerte123!` por tu propia contraseña:
 ```Bash
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 1433:1433 --name sql_server_container -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
-### Paso 2: Conectarte con `SQL Server Management Studio (SSMS)`
+### <ins>Paso 2</ins>: Conectarte con `SQL Server Management Studio (SSMS)`
 1. Abre `SQL Server Management Studio`.
 2. En la ventana de conexión, ingresa los siguientes datos:
     - **<ins>`Authentication`</ins>:** `SQL Server Authentication`.
@@ -17,16 +17,16 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 143
     - **<ins>`Password`</ins>:** La contraseña que definiste en el comando de Docker (ej. `TuPasswordFuerte123!`).
 3. Haz clic en `Connect`.
 
-### Paso 3: Crear la base de datos
+### <ins>Paso 3</ins>: Crear la base de datos
 Una vez dentro, tienes dos métodos para crearla:
 
-#### Método A: Usando la interfaz gráfica (GUI)
+#### <ins>Método A</ins>: Usando la interfaz gráfica (GUI)
 1. En el panel izquierdo (Object Explorer), haz clic derecho sobre la carpeta Databases.
 2. Selecciona New Database...
 3. En el campo Database name, escribe el nombre que desees para tu base de datos.
 4. Haz clic en OK.
 
-#### Método B: Usando una consulta T-SQL
+#### <ins>Método B</ins>: Usando una consulta `T-SQL`
 1. Haz clic en el botón New Query en la barra de herramientas superior.
 2. Escribe y ejecuta el siguiente código:
    ```SQL
