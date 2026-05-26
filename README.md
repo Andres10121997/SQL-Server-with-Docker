@@ -27,7 +27,7 @@ Una vez dentro, tienes dos métodos para crearla:
 4. Haz clic en `OK`.
 
 #### <ins>Método B</ins>: Usando una consulta `T-SQL`
-1. Haz clic en el botón New Query en la barra de herramientas superior.
+1. Haz clic en el botón `New Query` en la barra de herramientas superior.
 2. Escribe y ejecuta el siguiente código:
    ```SQL
    CREATE DATABASE MiBaseDeDatosDocker;
