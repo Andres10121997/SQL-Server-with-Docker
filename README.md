@@ -20,8 +20,8 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 143
 ### <ins>Paso 3</ins>: Crear la base de datos
 Una vez dentro, tienes dos métodos para crearla:
 
-#### <ins>Método A</ins>: Usando la interfaz gráfica (GUI)
-1. En el panel izquierdo (Object Explorer), haz clic derecho sobre la carpeta Databases.
+#### <ins>Método A</ins>: Usando la interfaz gráfica (`GUI`)
+1. En el panel izquierdo (`Object Explorer`), haz clic derecho sobre la carpeta `Databases`.
 2. Selecciona `New Database...`
 3. En el campo `Database name`, escribe el nombre que desees para tu base de datos.
 4. Haz clic en `OK`.
@@ -33,7 +33,7 @@ Una vez dentro, tienes dos métodos para crearla:
    CREATE DATABASE MiBaseDeDatosDocker;
    GO
    ```
-3. Haz clic en Execute (o presiona `F5`).
+3. Haz clic en `Execute` (o presiona `F5`).
 
 ## Más información
 1. [Microsoft SQL Server desde Docker Tutorial](https://www.youtube.com/watch?v=uHz9xOiaBbw).
