@@ -10,7 +10,7 @@ Abre tu terminal (`PowerShell`, `CMD` o `Bash`) y ejecuta el siguiente comando p
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Developer" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
 ```
 * **<ins>`MSSQL_SA_PASSWORD`</ins>:** Define la contraseña del usuario administrador (`sa`).
-* `MSSQL_PID`: Es una variable de entorno que define la edición de SQL Server o el ID de producto que se ejecutará en el contenedor. Determina las características, los límites de recursos y el tipo de licencia (de pago o gratuita) que utilizará tu instancia.
+* `MSSQL_PID`: Es una variable de entorno que define la edición de `SQL Server` o el `ID` de producto que se ejecutará en el contenedor. Determina las características, los límites de recursos y el tipo de licencia (de pago o gratuita) que utilizará tu instancia.
     * **<ins>`Developer` (predeterminada)</ins>:** Otorga todas las características premium de la edición `Enterprise`, pero únicamente para desarrollo y pruebas (sin licencia para producción). Si no declaras la variable, el contenedor asume esta opción.
     * **<ins>`Express`</ins>:** Edición gratuita y ligera, ideal para producción a pequeña escala con limitaciones de memoria y CPU.
     * **<ins>`Standard` o `Enterprise`</ins>:** Ediciones comerciales completas que requieren el ingreso de una clave de producto (Product Key) de licenciamiento por
