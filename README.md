@@ -3,7 +3,7 @@
 Crear una base de datos en `SQL Server` usando `Docker` y gestionarla con `SQL Server Management Studio (SSMS)` es un proceso rápido: levantas el contenedor, te conectas a él desde SSMS y creas la base de datos gráficamente o mediante código.
 
 ## Pasos
-### Paso 1: Iniciar el contenedor de SQL Server en Docker
+### Paso 1: Iniciar el contenedor de `SQL Server` en `Docker`
 Abre tu terminal (`PowerShell`, `CMD` o `Bash`) y ejecuta el siguiente comando para descargar e iniciar la última versión de `SQL Server`. Asegúrate de cambiar `TuPasswordFuerte123!` por tu propia contraseña:
 ```Bash
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 1433:1433 --name sql_server_container -d mcr.microsoft.com/mssql/server:2022-latest
