@@ -9,6 +9,8 @@ Abre tu terminal (`PowerShell`, `CMD` o `Bash`) y ejecuta el siguiente comando p
 ```Bash
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 1433:1433 --name sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
 ```
+* `-p 1433:1433`: Mapea el puerto del contenedor al de tu máquina local, permitiendo que `SSMS` lo "vea".
+* `MSSQL_SA_PASSWORD`: Define la contraseña del usuario administrador (`sa`).
 
 ### <ins>Paso 2</ins>: Conectarte con `SQL Server Management Studio (SSMS)`
 1. Abre `SQL Server Management Studio`.
