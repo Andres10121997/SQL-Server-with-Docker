@@ -39,8 +39,9 @@ Una vez dentro, tienes dos métodos para crearla:
 
 ### **<ins>(Opcional) Paso 4</ins>:** Listar contenedores creados
 En la terminal deberás ejecutar el uno de los siguientes comandos:
-* Para ver solo los contenedores activos: `docker ps`
-* Para ver todos los contenedores (incluyendo los que están detenidos o apagados): `docker ps -a`
+* Para ver solo los contenedores activos: `docker ps`.
+* Para ver todos los contenedores (incluyendo los que están detenidos o apagados): `docker ps -a`.
+* Para obtener únicamente el número total (contando todos): `docker ps -a -q | wc -l`.
 
 ## Definiciones
 ### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
