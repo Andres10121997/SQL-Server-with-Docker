@@ -38,10 +38,14 @@ Una vez dentro, tienes dos métodos para crearla:
 3. Haz clic en `Execute` (o presiona `F5`).
 
 ### **<ins>(Opcional) Paso 4</ins>:** Listar contenedores creados
-En la terminal deberás ejecutar el uno de los siguientes comandos:
+Para saber cuántos contenedores tienes en `Docker`, puedes seguir 2 caminos: La del terminal o aplicación de escritorio.
+#### Método terminal
+En la terminal deberás ejecutar uno de los siguientes comandos:
 * Para ver solo los contenedores activos: `docker ps`.
 * Para ver todos los contenedores (incluyendo los que están detenidos o apagados): `docker ps -a`.
 * Para obtener únicamente el número total (contando todos): `docker ps -a -q | wc -l`.
+#### Método aplicación de escritorio
+Si prefieres una interfaz gráfica, abre `Docker Desktop` y ve a la sección `Containers` en el menú lateral. Allí verás el listado completo y un contador visible en la parte superior de la pantalla.
 
 ## Definiciones
 ### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
