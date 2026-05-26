@@ -15,7 +15,9 @@ docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=TuPasswordFuerte123!" -p 143
 ### <ins>Paso 2</ins>: Conectarte con `SQL Server Management Studio (SSMS)`
 1. Abre `SQL Server Management Studio`.
 2. En la ventana de conexión, ingresa los siguientes datos:
-    - **<ins>`Server name`</ins>:** Ingresa `localhost` o `127.0.0.1`. Si usaste un puerto dinámico al `1433`, usa el formato `localhost,puerto` (ej. `localhost,1433`).
+    - **<ins>`Server name`</ins>:**
+        - Ingresa `localhost` o `127.0.0.1`.
+        - Si usaste un puerto dinámico al `1433`, usa el formato `localhost,puerto` (ej. `localhost,1433`).
     - **<ins>`Authentication`</ins>:** `SQL Server Authentication`.
     - **<ins>`Login`</ins>:** `sa`.
     - **<ins>`Password`</ins>:** La contraseña que definiste en el comando de `Docker` (ej. `TuPasswordFuerte123!`).
