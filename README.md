@@ -34,3 +34,7 @@ Una vez dentro, tienes dos métodos para crearla:
    GO
    ```
 3. Haz clic en Execute (o presiona `F5`).
+
+## Más información
+1. [Microsoft SQL Server desde Docker Tutorial](https://www.youtube.com/watch?v=uHz9xOiaBbw).
+2. [Microsoft SQL Server - Ubuntu based images](https://hub.docker.com/r/microsoft/mssql-server).
