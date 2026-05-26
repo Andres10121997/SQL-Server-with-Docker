@@ -26,7 +26,7 @@ Una vez dentro, tienes dos métodos para crearla:
 
 #### <ins>Método A</ins>: Usando la interfaz gráfica (`GUI`)
 1. En el panel izquierdo (`Object Explorer`), haz clic derecho sobre la carpeta `Databases`.
-2. Selecciona `New Database...`
+2. Selecciona `New Database...`.
 3. En el campo `Database name`, escribe el nombre que desees para tu base de datos.
 4. Haz clic en `OK`.
 
