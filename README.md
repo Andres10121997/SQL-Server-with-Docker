@@ -38,6 +38,7 @@ Una vez dentro, tienes dos métodos para crearla:
 3. Haz clic en `Execute` (o presiona `F5`).
 
 ## Definiciones
+### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
 * **<ins>`MSSQL_SA_PASSWORD`</ins>:** Define la contraseña del usuario administrador (`sa`).
 * `MSSQL_PID`: Es una variable de entorno que define la edición de `SQL Server` o el `ID` de producto que se ejecutará en el contenedor. Determina las características, los límites de recursos y el tipo de licencia (de pago o gratuita) que utilizará tu instancia.
     * **<ins>`Developer` (predeterminada)</ins>:** Otorga todas las características premium de la edición `Enterprise`, pero únicamente para desarrollo y pruebas (sin licencia para producción). Si no declaras la variable, el contenedor asume esta opción.
