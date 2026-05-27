@@ -8,7 +8,7 @@ Crear una base de datos en `SQL Server` usando `Docker` y gestionarla con `SQL S
 2. Ejecuta el siguiente comando para descargar e iniciar la última versión de `SQL Server`:
     - Asegúrate de cambiar la contraseña, que para efectos del ejemplo es `TuPasswordFuerte123!`, por otra.
     - Puedes cambiar el nombre (`name`) y el `hostname` del comando.
-    ```Bash
+    ```PowerShell
     docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Developer" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
     ```
 
