@@ -9,7 +9,7 @@ Crear una base de datos en `SQL Server` usando `Docker` y gestionarla con `SQL S
     - Asegúrate de cambiar la contraseña, que para efectos del ejemplo es `TuPasswordFuerte123!`, por otra.
     - Puedes cambiar el nombre (`name`) y el `hostname` del comando.
     ```PowerShell
-    docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Express" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
+    docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Developer" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
     ```
 
 ### <ins>Paso 2</ins>: Conectarte con `SQL Server Management Studio (SSMS)`
