@@ -9,7 +9,7 @@ Crear una base de datos en `SQL Server` usando `Docker` y gestionarla con `SQL S
     - Asegúrate de cambiar la contraseña, que para efectos del ejemplo es `TuPasswordFuerte123!`, por otra.
     - Puedes cambiar el nombre (`name`) y el `hostname` del comando.
     ```PowerShell
-    docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Developer" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
+    docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<password>" -e "MSSQL_PID=Express" -p 1433:1433 --name sql_server_container --hostname sql_server_container -d mcr.microsoft.com/mssql/server:2025-latest
     ```
 
 ### <ins>Paso 2</ins>: Conectarte con `SQL Server Management Studio (SSMS)`
@@ -53,10 +53,10 @@ Si prefieres una interfaz gráfica, abre `Docker Desktop` y ve a la sección `Co
 ### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
 * **<ins>`MSSQL_SA_PASSWORD`</ins>:** Define la contraseña del usuario administrador (`sa`).
 * `MSSQL_PID`: Establece la [`Edición de SQL Server`](https://learn.microsoft.com/es-mx/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17#sql-server-editions) o clave de producto. Los valores posibles se enumeran a continuación [`Ediciones de SQL Server`](https://learn.microsoft.com/es-mx/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17#sql-server-editions). Si especifica una clave de producto, debe tener la forma de `#####-#####-#####-#####-#####`, donde `#` es un número o una letra.
-    * **<ins>`Developer` (predeterminada)</ins>:** Otorga todas las características premium de la edición `Enterprise`, pero únicamente para desarrollo y pruebas (sin licencia para producción). Si no declaras la variable, el contenedor asume esta opción.
-    * **<ins>`Express`</ins>:** Edición gratuita y ligera, ideal para producción a pequeña escala con limitaciones de memoria y CPU.
-    * **<ins>`Standard` o `Enterprise`</ins>:** Ediciones comerciales completas que requieren el ingreso de una clave de producto (`Product Key`) de licenciamiento por
-* **<ins>`-p 1433:1433`</ins>:** Mapea el puerto del contenedor al de tu máquina local, permitiendo que `SSMS` lo "vea".
+    * **<ins>`Enterprise`</ins>:** La oferta premier, `SQL Server Enterprise Edition` se ha creado para organizaciones que exigen un rendimiento, seguridad y escalabilidad inflexibles. Esta edición es tanto una base de datos con tecnología de inteligencia artificial como un motor crítico diseñado para impulsar las cargas de trabajo más complejas en entornos locales, en la nube y híbridos.
+    * **<ins>`Standard`</ins>:** `SQL Server Standard Edition` ofrece un equilibrio de rendimiento, seguridad y asequibilidad para empresas que necesitan funcionalidades de clase empresarial sin la complejidad. Esta edición permite a las empresas en crecimiento el rendimiento de nivel empresarial, las funcionalidades modernas de inteligencia artificial y la flexibilidad híbrida.
+    * **<ins>`Evaluation`</ins>:** `SQL Server Evaluation Edition` incluye toda la funcionalidad de `Enterprise Edition`. Hay disponible una implementación de evaluación durante 180 días. Para obtener información, consulte [Recursos y documentos de licencias de SQL Server](https://www.microsoft.com/licensing/docs/view/SQL-Server).
+    * **<ins>`Express`</ins>:** `SQL Server Express Edition` es la base de datos gratuita de nivel de entrada, ideal para aprender y compilar aplicaciones controladas por datos de escritorio y servidor pequeño. Esta edición unificada incluye `SQL Server Data Tools (SSDT)`, integración de aprendizaje automático y Búsqueda de texto completo. Es la mejor opción para proveedores de software independientes, desarrolladores y aficionados que crean aplicaciones cliente. Si necesita características de base de datos más avanzadas, `SQL Server Express` se puede actualizar sin problemas a otras ediciones de gama superior de `SQL Server`.
 
 ## Más información
 1. [Microsoft SQL Server desde Docker Tutorial](https://www.youtube.com/watch?v=uHz9xOiaBbw).
