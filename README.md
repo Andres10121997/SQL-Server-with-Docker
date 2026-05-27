@@ -52,7 +52,7 @@ Si prefieres una interfaz gráfica, abre `Docker Desktop` y ve a la sección `Co
 ## Definiciones
 ### <ins>Paso 1</ins>: Iniciar el contenedor de `SQL Server` en `Docker`
 * **<ins>`MSSQL_SA_PASSWORD`</ins>:** Define la contraseña del usuario administrador (`sa`).
-* `MSSQL_PID`: Es una variable de entorno que define la edición de `SQL Server` o el `ID` de producto que se ejecutará en el contenedor. Determina las características, los límites de recursos y el tipo de licencia (de pago o gratuita) que utilizará tu instancia.
+* `MSSQL_PID`: Establece la [`Edición de SQL Server`](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17#sql-server-editions) o clave de producto. Los valores posibles se enumeran a continuación [`Ediciones de SQL Server`](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2025?view=sql-server-ver17#sql-server-editions). Si especifica una clave de producto, debe tener la forma de `#####-#####-#####-#####-#####`, donde `#` es un número o una letra.
     * **<ins>`Developer` (predeterminada)</ins>:** Otorga todas las características premium de la edición `Enterprise`, pero únicamente para desarrollo y pruebas (sin licencia para producción). Si no declaras la variable, el contenedor asume esta opción.
     * **<ins>`Express`</ins>:** Edición gratuita y ligera, ideal para producción a pequeña escala con limitaciones de memoria y CPU.
     * **<ins>`Standard` o `Enterprise`</ins>:** Ediciones comerciales completas que requieren el ingreso de una clave de producto (`Product Key`) de licenciamiento por
